@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Navbar ({ cart, searchTerm, setSearchTerm }) {
   return (
-    <section className="navbar flex-wrap w-full items-center gap-4 bg-green-950 p-4">
+    <section className="navbar flex flex-col md:flex-row flex-wrap w-full items-center gap-2 bg-green-950 p-4 ">
       <div className="navbar-brand flex items-center justify-center gap-2 text-amber-100">
         <img
           src="/logo.png"
@@ -13,8 +13,8 @@ function Navbar ({ cart, searchTerm, setSearchTerm }) {
           className="navbar-logo h-12 w-12 object-contain"
         />
         <div className="navbar-brand-text">
-          <h1 className="navbar-title">Tresor Antique</h1>
-          <p className="navbar-tagline">rare & authentique</p>
+          <h1 className="navbar-title font-bold">Trésor Antique</h1>
+          <p className="navbar-tagline font-light">Rare & Authentique</p>
         </div>
       </div>
 
@@ -36,10 +36,10 @@ function Navbar ({ cart, searchTerm, setSearchTerm }) {
   
 
       <div className="navbar-actions ml-auto flex shrink-0 items-center gap-10 text-amber-100">
-        <div className="group relative">
+        <div className="group relative right-20">
           <UserRound className="cursor-pointer" />
           <form className=" absolute top-12.5 right-0 z-10
-           w-250 h-0 group-hover:h-55
+           w-125 h-0 group-hover:h-55
            overflow-hidden
            bg-amber-700 shadow-2xl rounded-b-xl
            transition-all duration-700 ease-in-out">
@@ -62,7 +62,7 @@ function Navbar ({ cart, searchTerm, setSearchTerm }) {
 
           </form>
         </div>
-        <Link to="/shoppingcart" className="relative">
+        <Link to="/shoppingcart" className="relative right-20">
   <ShoppingCart className="cart-icon h-6 w-6" />
   <span className="absolute -right-3 -top-3 text-sm">{cart.length}</span>
         </Link>
