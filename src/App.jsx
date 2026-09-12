@@ -54,14 +54,19 @@ function App() {
           path="/produit/:id"
           element={<Catalogue products={products} addToCart={addToCart} />}
         />
+        
         <Route path="/shoppingcart" element={<Cart cart={cart} />} />
         <Route path="/cart" element={<Cart cart={cart} />} />
         <Route path="*" element={<p className="p-8 text-blue-800 text-4xl">Page introuvable.</p>} />
         <Route
     path="/products"
-    element={<Products products={filteredProducts} addToCart={addToCart} />}
-  />
-      </Routes>
+    element={<Products products={filteredProducts} addToCart={addToCart} />} />
+    <Route
+  path="/features"
+  element={<Features />}
+/>
+
+ </Routes>
     </BrowserRouter>
   );
 }
