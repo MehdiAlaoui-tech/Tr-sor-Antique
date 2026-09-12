@@ -38,8 +38,8 @@ function Navbar ({ cart, searchTerm, setSearchTerm }) {
       <div className="navbar-actions ml-auto flex shrink-0 items-center gap-10 text-amber-100">
         <div className="group relative right-20">
           <UserRound className="cursor-pointer" />
-          <form className=" absolute top-12.5 -right-25 z-10
-           w-100 h-0 group-hover:h-55
+          <form className=" absolute top-12.5 -right-35 z-10
+           w-90 h-0 group-hover:h-55
            overflow-hidden
            bg-amber-700 shadow-2xl rounded-b-xl
            transition-all duration-700 ease-in-out">
