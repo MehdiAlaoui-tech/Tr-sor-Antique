@@ -1,6 +1,6 @@
 function Features () {
     return (
-        <section className="bg-green-950 h-125">
+        <section className="bg-green-950 h-125 min-h-screen">
             <div className=" flex shrink-0 justify-between items-center p-30  gap-6 ">
                 <div className="relative right-25 grid-cols-1 -translate-y-50 mr-20 mt-15  ">
         <h1 className="text-2xl text-amber-100 text-start font-light">Achetez des </h1>

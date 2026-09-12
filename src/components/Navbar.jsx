@@ -7,11 +7,12 @@ function Navbar ({ cart, searchTerm, setSearchTerm }) {
   return (
     <section className="navbar flex flex-col md:flex-row flex-wrap w-full items-center gap-2 bg-green-950 p-4 ">
       <div className="navbar-brand flex items-center justify-center gap-2 text-amber-100">
+        <Link to="/">
         <img
           src="/logo.png"
           alt="Tresor Antique"
-          className="navbar-logo h-12 w-12 object-contain"
-        />
+          className="navbar-logo h-12 w-12 object-contain" />
+         </Link>
         <div className="navbar-brand-text">
           <h1 className="navbar-title font-bold">Trésor Antique</h1>
           <p className="navbar-tagline font-light">Rare & Authentique</p>

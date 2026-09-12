@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-green-950 px-6 py-12 text-amber-200">
@@ -5,8 +6,10 @@ function Footer() {
             <li>
              <h3 className="font-bold">CATALOGUE</h3>
              <ul className="mt-4 space-y-2 font-light text-amber-200">
+               <Link to ="/Products">
                 <li>catégorie</li>
-                <li>style</li>
+                </Link>
+                <li>style</li>     
                 <li>époque</li>
                 <li>Nouveauté</li>
              </ul>   
@@ -14,7 +17,9 @@ function Footer() {
              <li>
              <h3 className="font-bold">PROFESSIONNELS</h3>
              <ul className="mt-4 space-y-2 font-light text-amber-200">
+               <Link to="/features">
                 <li>antiquaires</li>
+                </Link>
                 <li>syndicats</li>
                 <li>d'antiquaire</li>
                 <li>siècle</li>
