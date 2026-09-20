@@ -17,13 +17,13 @@ function Hero () {
           className="relative w-screen h-screen object-containts border-2 border-amber-200" />
 
           <button onClick={precedente}
-           className="absolute left-4 top-1/2 text-white w-auto h-auto hover:scale-620 transition duration-900"
+           className="absolute left-4 top-1/2 text-white w-auto h-auto hover:scale-320 transition duration-900"
            aria-label="Image précédente">
              <ChevronLeft className=" left-4 top-1/2 z-10 -translate-y-1/2 text-red w-8 h-8 " />
           </button>
 
           <button onClick={suivante}
-             className="absolute right-4 top-1/2 text-white w-auto h-auto hover:scale-220 transition duration-600"
+             className="absolute right-4 top-1/2 text-white w-auto h-auto hover:scale-320 transition duration-900"
              aria-label="Image suivante">
            <ChevronRight className="right-4 top-1/2 z-10 -translate-y-1/2 text-shadow-white w-8 h-8" />
            </button>
